@@ -1,0 +1,25 @@
+<mat-button-toggle-group name="mode">
+  <mat-button-toggle
+    routerLink="plane"
+    routerLinkActive
+    #planeRla="routerLinkActive"
+    [checked]="planeRla.isActive"
+    >plane</mat-button-toggle
+  >
+  <mat-button-toggle
+    routerLink="virtual"
+    routerLinkActive
+    #virtualRla="routerLinkActive"
+    [checked]="virtualRla.isActive"
+    >virtual</mat-button-toggle
+  >
+  <mat-button-toggle
+    routerLink="ag-grid"
+    routerLinkActive
+    #agGridRla="routerLinkActive"
+    [checked]="agGridRla.isActive"
+    >AG Grid</mat-button-toggle
+  >
+</mat-button-toggle-group>
+
+<router-outlet></router-outlet>

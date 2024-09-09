@@ -1,0 +1,12 @@
+<p>レンダリング時間: {{ renderTime() }} ms</p>
+<ag-grid-angular
+  class="ag-theme-quartz"
+  style="height: 400px"
+  [rowData]="rowData"
+  [defaultColDef]="defaultColDef"
+  [columnDefs]="colDefs"
+  [autoSizeStrategy]="{
+    type: 'fitCellContents'
+  }"
+  [localeText]="localeText"
+/>
